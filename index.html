@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artashes – Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://github.com/artashes-tumo.png" />
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <button id="theme-toggle">Light Mode</button>
+
+  <header>
+    <h1>My GitHub Projects</h1>
+    <p>Automatically loaded • artashes-tumo.github.io</p>
+  </header>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar">
+    <span><strong id="total-projects">0</strong> Projects</span>
+    <span><strong id="live-projects">0</strong> Live Demos</span>
+    <span><strong id="total-languages">0</strong> Languages</span>
+    <span><strong id="visitor-count">—</strong> Visitors today</span>
+  </div>
+
+  <!-- Search + Filters -->
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search projects, tech, or language..." />
+    <div class="filter-controls">
+      <button class="filter-btn active" data-sort="newest">Newest First</button>
+      <button class="filter-btn" data-sort="oldest">Oldest First</button>
+      <button class="filter-btn" data-filter="with-pages">Live Demos Only</button>
+      <button class="filter-btn" data-filter="all">All Projects</button>
+    </div>
+  </div>
+
+  <main>
+    <div id="repo-container" class="repo-grid"></div>
+  </main>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" title="Back to top">Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
